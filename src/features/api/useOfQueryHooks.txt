@@ -1,0 +1,38 @@
+//Here I have Explain how to use Query Hooks
+
+import {
+  useGetNamesQuery,
+  useGetNameQuery,
+  usePostNameMutation,
+  usePatchNameMutation,
+  useDeleteNameMutation,
+} from "../features/api/apiSlice";
+
+// for getting data using get request (query)
+const { data: names, isLoading, isError, error } = useGetNamesQuery();
+
+// for getting data by passing params using get request (query)
+const {
+  data: name,
+  isLoading,
+  isError,
+  error,
+} = useGetNameQuery(
+  { params },
+  {
+    refetchOnMountOrArgChange:
+      true / false / "TimeRanges for keep data in caches after that refetch",
+  }
+);
+
+// for Post data using Post request (mutation)
+const [postName, { data, isLoading, isSuccess, isError, error }] =
+  usePostNameMutation();
+
+// for Update data using Patch request (mutation)
+const [patchName, { data, isLoading, isSuccess, isError, error }] =
+  usePatchNameMutation();
+
+// for Data data using delete request (mutation)
+const [deleteName, { isLoading, isSuccess, isError, error }] =
+  useDeleteNameMutation();
