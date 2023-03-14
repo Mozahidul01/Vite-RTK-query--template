@@ -17,9 +17,9 @@ To use this code, you will need to have Node.js and npm installed on your machin
 
 ## How to Use
 
-1. Clone the repository to your local machine.
-2. Install dependencies using npm install.
-3. Run the development server using npm run dev.
+1. `Clone` the repository to your local machine.
+2. Install dependencies using `npm install`.
+3. Run the development server using `npm run dev`.
 4. Access the application at `/http://localhost:5173/`.
 
 ## Project Structure
