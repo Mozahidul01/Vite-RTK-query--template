@@ -25,16 +25,16 @@ To use this code, you will need to have Node.js and npm installed on your machin
 ## Project Structure
 
 - `src/`: Contains all the source code for the application.
-  -`app/`: Contains the Redux store configuration.
-  -`assets/`: Contains all the necessary assets for the application.
-  -`components/`: Contains all the React components used in the application.
-  -`feature/`: Contains all the Redux features used in the application.
-    -`api/`: Contains all the files related to handling API requests.
-      -`apiSlice.js`: Defines the API endpoints and their associated functions.
-      -`useOfQueryHooks.txt`: Explains how to use Query Hooks that have been created in apiSlice.
-  -`App.jsx`: The main component that renders all other components.
-  -`index.css`: Contains all the necessary CSS for the application.
-  -`main.jsx`: The application's entry point that renders the App component wrapped with the Provider component to provide the Redux store to the entire application.
+  - `app/`: Contains the Redux store configuration.
+  - `assets/`: Contains all the necessary assets for the application.
+  - `components/`: Contains all the React components used in the application.
+  - `feature/`: Contains all the Redux features used in the application.
+    - `api/`: Contains all the files related to handling API requests.
+      - `apiSlice.js`: Defines the API endpoints and their associated functions.
+      - `useOfQueryHooks.txt`: Explains how to use Query Hooks that have been created in apiSlice.
+  - `App.jsx`: The main component that renders all other components.
+  - `index.css`: Contains all the necessary CSS for the application.
+  - `main.jsx`: The application's entry point that renders the App component wrapped with the Provider component to provide the Redux store to the entire application.
 
 ### Usage
 
